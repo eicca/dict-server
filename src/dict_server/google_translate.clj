@@ -27,7 +27,7 @@
       {:source-name "google" :source-url (str web-url from "/" dest "/" phrase)
        :dest dest :phrase (result :translatedText)})))
 
-; (translate "en" "de" "someone")
+; (translate "en" "de" "hello")
 
 (defn detect
   "Detects a language by provided phrase.

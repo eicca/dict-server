@@ -1,2 +1,1 @@
-{:default {:env {:forvo-key "forvo-key"
-                 :google-key "google-key"}}}
+{:default {:env {:google-key "google-key"}}}

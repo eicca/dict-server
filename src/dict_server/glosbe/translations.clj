@@ -61,7 +61,6 @@
         translations (map parse-translation (take max-translations html-translations))]
     {:dest dest
      :translations (assign-sources translations from dest)
-     :source-name "glosbe"
      :source-url source-url}))
 
 
@@ -70,5 +69,5 @@
 
 ; (map #(get-in % [:attrs :data-url-ogg]) (html/select (first result1) [:span.audioPlayer-container :> :span]))
 
-(get-translations "en" "de" "hello")
+; (get-translations "en" "de" "hello")
 

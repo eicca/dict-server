@@ -38,4 +38,3 @@
          (result :suggestions))))
 
 ; (suggest {:locales ["en" "de" "ru"] :fallback-locale "de" :phrase "irg"})
-

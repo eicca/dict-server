@@ -16,5 +16,5 @@
             [lein-environ "1.0.0"]]
   :ring {:handler dict-server.handler/app}
   :profiles
-  {:dev {:dependencies [[ring-mock "0.1.5"]]}}
+  {:dev {:dependencies [[ring/ring-mock "0.2.0"]]}}
   :min-lein-version "2.0.0")

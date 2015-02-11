@@ -1,7 +1,6 @@
 (ns dict-server.google-translate
   (:require [clj-http.client :as client]
-            [environ.core :refer [env]]
-            [dict-server.utils :refer :all]))
+            [environ.core :refer [env]]))
 
 (def api-key (env :google-key))
 
@@ -12,9 +11,7 @@
 (def detect-endpoint
   (str translate-endpoint "/detect"))
 
-; (action "detect")
-
-(defn prepare-params
+(defn- prepare-params
   [phrase]
   {:q phrase :key api-key})
 

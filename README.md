@@ -21,7 +21,12 @@ To start a web server for the application, run:
 
     lein ring server-headless
 
+## Running tests
+
+```
+lein with-profile dev test
+```
+
 ## License
 
 MIT
-

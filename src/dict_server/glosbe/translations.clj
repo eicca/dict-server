@@ -1,7 +1,6 @@
 (ns dict-server.glosbe.translations
   (:require [net.cgrand.enlive-html :as html]
-            [clj-http.client :as client]
-            [dict-server.utils :refer :all]))
+            [clj-http.client :as client]))
 
 (def max-translations 5)
 
@@ -70,4 +69,3 @@
 ; (map #(get-in % [:attrs :data-url-ogg]) (html/select (first result1) [:span.audioPlayer-container :> :span]))
 
 ; (get-translations "en" "de" "hello")
-

@@ -20,4 +20,3 @@
                             (pairs-for locales detected-locale))))}))
 
 ; (get-all-suggestions {:locales ["en" "de" "ru"] :fallback-locale "de" :phrase "irg"})
-

@@ -4,14 +4,14 @@
            [dict-server.google-translate :as google-translate]))
 
 ; TODO parse and return information from wiktionary link (espicially sounds).
-(defn wiktionary-link
+(defn- wiktionary-link
   [from phrase]
   (str "http://" from ".wiktionary.org/wiki/" phrase))
 
 ; TODO google client should return its own meta translation.
 ; Perhaps it's better to return empty meta translation from glosbe
 ; if nothing was found.
-(defn fill-missing-with-google
+(defn- fill-missing-with-google
   [meta-translation from dest phrase]
   (if (empty? (meta-translation :translations))
     (assoc meta-translation :translations [(google-translate/translate from dest phrase)])

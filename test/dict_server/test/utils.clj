@@ -1,12 +1,7 @@
-(ns dict-server.test.translator
+(ns dict-server.test.utils
   (:require [clojure.test :refer :all]
             [dict-server.utils :refer :all]))
 
-(deftest test-locale-to-alpha3
-  (is (= (locale-to-alpha3 "en")
-         "eng")
-      "Converts 'en' to 'eng'")
-  (is (= (locale-to-alpha3 "de")
-         "deu")
-      "Converts 'de' to 'deu'"))
-
+(deftest test-pairs-for
+  (let [pairs (pairs-for ["en" "de" "ru"] "en")]
+    (is (= pairs [{:from "en", :dest "de"} {:from "en", :dest "ru"}]))))

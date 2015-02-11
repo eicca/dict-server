@@ -1,6 +1,7 @@
-# Dict server
+# Smart translate server
 
-TODO
+Server for smart translate chrome (more to come) extension:
+https://github.com/eicca/dict-chrome
 
 ## Prerequisites
 
@@ -20,6 +21,10 @@ vim profiles.clj
 To start a web server for the application, run:
 
     lein ring server-headless
+
+## Deploying
+
+Application should work with heroku/dokku.
 
 ## Running tests
 

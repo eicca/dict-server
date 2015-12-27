@@ -23,6 +23,7 @@
         (->> (t/translate source target query)
              (s/validate data/Translation)
              response))))
+  (GET "/health" [] "All Systems Operational!")
   (route/not-found "Not Found"))
 
 (def app

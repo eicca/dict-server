@@ -4,5 +4,7 @@ COPY project.clj /usr/src/app/
 RUN lein deps
 COPY . /usr/src/app
 
+EXPOSE 3000
+
 ENTRYPOINT ["lein"]
 CMD ["ring", "server-headless"]

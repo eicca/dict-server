@@ -46,7 +46,7 @@ Don't forget to rebuild the container in case of dependencies change.
 To start a web server for the application, run:
 
 ```
-docker run -it --rm -v "$PWD/src":/usr/src/app/src  -p 3000:3000 glosbe-translate
+docker run -it --rm -v "$PWD/src":/usr/src/app/src -p 3000:3000 glosbe-translate
 ```
 
 ## Launching REPL

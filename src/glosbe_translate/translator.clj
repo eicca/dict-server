@@ -44,7 +44,7 @@
   (map (fn
          [translation]
          (conj translation {:origin-name "glosbe"
-                            :web-url (translation-url target source (translation :query))}))
+                            :web-url (translation-url target source (translation :translated-text))}))
        translations))
 
 (defn translate
